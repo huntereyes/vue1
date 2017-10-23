@@ -1,45 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Refresh" content="1;url=https://huntereyes.github.io/vue1/learn-vuejs/"> 
     <title>learn-vuejs</title>
-    <script src="https://unpkg.com/vue"></script>
 </head>
 
 <body>
-    <div id="root">
-        <ul>
-            <li v-for="name in names" v-text="name"></li>
-        </ul>
-        <input id="input" type="text" v-model="newName" v-on:keyup="addName">
-        <button @:click="addName">add</button>
-    </div>
-    <!-- <script src="js/vuejs.js"></script> -->
-    <script>
-    let app = new Vue({
-        el: '#root',
-        data: {
-            newName: '',
-            names: ['joe', 'mary', 'jane', 'jack']
-        },
-        methods: {
-            addName() {
-                this.names.push(this.newName),
-                    this.newName = '';
-            }
-        },
-        // mounted() {
-        //     document.querySelector('#button').addEventListener('click', () => {
-        //         let name = document.querySelector('#input');
-
-        //         app.names.push(name.value);
-        //         name.value = '';
-        //     });
-
-        // }
-    });
-    </script>
 </body>
 
 </html>
