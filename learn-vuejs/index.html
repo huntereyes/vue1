@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>learn-vuejs</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="root">
+    	<ul>
+    		<li v-for="name in names" v-text="name"></li>
+    	</ul>
+
+    	<input type="text">
+    	<button>add</button>
+    	
+    </div>
+    
+
+    <!-- <script src="js/vuejs.js"></script> -->
+    <script>
+    let app = new Vue({
+        el: '#root',
+        data: {
+        	names:['joe','mary','jane','jack']
+        }
+    });
+    </script>
+</body>
+
+</html>

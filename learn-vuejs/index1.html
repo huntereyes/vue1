@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>learn-vuejs</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="root">
+        <input type="text" id="input" v-model="message">
+        <p> {{message}}</p>
+    </div>
+    <!-- <script src="js/vuejs.js"></script> -->
+    <script>
+    let data = { message: 'hellow world' }
+    new Vue({ el: '#root', data: data });
+    </script>
+</body>
+
+</html>
